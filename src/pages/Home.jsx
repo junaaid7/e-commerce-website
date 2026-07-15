@@ -105,9 +105,9 @@ function Home() {
 
   return (
     <div>
-      <div className="bg-white text-black px-6 py-4 flex m-auto max-w-5xl">
-        {/* categories */}
-        <ul className="flex flex-col gap-4 text-sm md:text-base w-[217px] h-full border-r border-r-gray-300">
+      <div className="bg-white text-black px-4 md:px-6 py-4 m-auto max-w-5xl flex flex-col md:flex-row">
+        {/* categories (hidden on small screens) */}
+        <ul className="hidden md:flex flex-col gap-4 text-sm md:text-base w-[217px] h-full border-r border-r-gray-300">
           <li className="hover:text-blue-400 cursor-pointer">Electronics</li>
           <li className="hover:text-blue-400 cursor-pointer">Fashion</li>
           <li className="hover:text-blue-400 cursor-pointer">Home & Kitchen</li>
@@ -120,8 +120,8 @@ function Home() {
         </ul>
 
         {/* banner carousel with captions */}
-        <div className="flex  h-full py-4 ml-4 relative">
-          <div className="relative w-[750px] h-[344px] overflow-hidden rounded-lg shadow-lg">
+        <div className="flex-1 py-4 mt-4 md:mt-0 md:ml-4 relative">
+          <div className="relative w-full md:w-[750px] h-[220px] md:h-[344px] overflow-hidden rounded-lg shadow-lg">
             {/* Carousel Images */}
             <div
               className="flex transition-transform duration-700 ease-in-out h-full "
@@ -129,11 +129,7 @@ function Home() {
             >
               {carouselData.map((slide, index) => (
                 <div key={index} className="min-w-full h-full relative">
-                  <img
-                    src={slide.image}
-                    alt="Banner"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={slide.image} alt="Banner" className="w-full h-full object-cover" />
 
                   {/* Caption Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center">

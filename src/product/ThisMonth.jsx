@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import bag from "../assets/bag.png";
 import shirt from "../assets/shirt.png";
 import music from "../assets/music.png";
-import cart from "../assets/cart.png";
+import cart from "../assets/Cart.png";
 
 function ThisMonth() {
   return (
