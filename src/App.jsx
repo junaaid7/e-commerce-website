@@ -92,17 +92,17 @@
 
 import React from "react";
 import "./App.css";
-import Navbar from "./Component/Navbar.jsx";
+import Navbar from "./Component/Navbar";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home.jsx";
-import About from "./Pages/About.jsx";
-import Contact from "./Pages/Contact.jsx";
-import Footer from "./Pages/Footer.jsx";
-import Signup from "./Pages/Signup.jsx";
-import Login from "./Pages/Login.jsx";
-import AddCard from "./Pages/AddCard.jsx";
-import ProtectedRoute from "./Component/ProtectedRoute.jsx";
-import { AuthProvider } from "./context/AuthContext.jsx"; // 👈 new import
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import AddCard from "./pages/AddCard";
+import ProtectedRoute from "./Component/ProtectedRoute";
+import { AuthProvider } from "./context/AuthContext"; // 👈 new import
 
 function App() {
   return (
